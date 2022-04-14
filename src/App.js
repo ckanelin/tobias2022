@@ -139,10 +139,10 @@ const options = {
     solver:"hierarchicalRepulsion",
     hierarchicalRepulsion: {
       centralGravity: 0.5,
-      springLength: 125,
-      springConstant: 0.01,
-      nodeDistance: 200,
-      damping: 0.09
+      springLength: 150,
+      springConstant: 0.1,
+      nodeDistance: 250,
+      damping: 0.1
     },
   },
   groups:{
@@ -225,7 +225,7 @@ function App() {
           flexDirection:"column"}}>
           <h1>{currentTobias.title}</h1>
           <div style={{margin:"10px"}}>Click Anywhere To Close</div>
-          <img src={currentPicture} width="70%"/>
+          <img src={currentPicture} height="50%"/>
           <div style={{width: "70%", display: "flex"}}>
             <div style={{
               width: "100%", 
